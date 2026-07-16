@@ -103,6 +103,8 @@ function registrarProveedor() {
   padding: clamp(1rem, 2.5vw, 1.5rem);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: min(100%, 860px);
+  margin: 0 auto;
 }
 
 .campo {
@@ -154,15 +156,10 @@ button:hover {
 
 @media (min-width: 700px) {
   .formulario {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .campo,
-  button,
-  .mensaje {
-    grid-column: span 1;
-  }
-
   button,
   .mensaje {
     grid-column: 1 / -1;
